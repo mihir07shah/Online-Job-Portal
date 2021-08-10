@@ -1,0 +1,148 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.c1{
+	padding: 20px;
+}
+.img{
+	width: 60%;
+	height: 530px;
+	position: fixed;
+	top: 100px;
+	background-image: url('ianschneider.jpg');
+	background-size: cover;
+}
+.logo{
+	width: 30%;
+	float: left;
+	line-height: 80px;
+	position: fixed;
+}
+.logo a{
+	font-family: corbel;
+	font-size: 30px;
+	letter-spacing: 5px;
+}
+header{
+
+}
+nav{
+	margin-left: 850px;
+	line-height: 70px;
+	position: fixed;
+}
+nav a{
+	text-decoration: none;
+	font-family: corbel;
+	font-size: 30px;
+	padding: 20px;
+	color: #1F196B;
+}
+nav a:hover {
+	border-radius: 8px;
+	background: black;
+	color: white;
+}
+
+.s{
+	width: 50%;
+	height: 200px;
+	margin-left: 580px;
+	background: #27D7D7 ;
+
+}
+.s1{
+	width: 40%;
+	height: 250px;
+	margin-left: 800px;
+}
+.b1{
+	margin-top: 40px;
+	margin-left: 85px;
+	line-height: 45px;
+	border: none;
+	border-radius: 4px;
+	width: 65%;
+	font-family: corbel;
+	font-size: 20px;
+}
+.b2{
+	margin-top: 70px;
+	margin-left: 85px;
+	line-height: 40px;
+	border: none;
+	border-radius: 4px;
+	width: 65%;
+	font-family: corbel;
+	font-size: 20px;
+}
+.b1:hover {
+  background: black;
+  color: white;
+}
+.b2:hover {
+  background: black;
+  color: white;
+}
+.f{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;
+    font-family: corbel;
+    background: #BBC4C4;
+    color: black;
+}
+.s2{
+	width: 39%;
+	height: 600px;
+	margin-top: 140px;
+	margin-left: 810px;
+}
+.s2 a{
+	font-family: corbel;
+	padding: 30px;
+	font-size: 40px;
+}
+.s2 p{
+	font-family: corbel;
+	padding: 30px;
+	font-size: 40px;
+}
+.s3{
+	width: 39%;
+	height: 600px;
+	margin-top: 10px;
+	margin-left: 810px;
+}
+.s3 a{
+	font-family: corbel;
+	font-size: 40px;
+}
+.s3 p{
+	font-family: calibri;
+	font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

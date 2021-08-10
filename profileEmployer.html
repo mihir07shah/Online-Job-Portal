@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <title>HTML generator</title>
+
+    <meta name="description" content="HTML generator">
+    <meta name="author" content="Viren-vii">
+    <!--     <link rel="stylesheet" href="css/styles.css"> -->
+</head>
+
+<body><br>
+    <div id="firstTimeInputs">
+        <p id="emailId"></p>
+        <lable for="name">Company Name:</lable>
+        <input type="text" id="name" name="name" /><br><br>
+        <lable for="email">Email id:</lable>
+        <input type="email" id="email" name="email" /><br><br>
+        <lable for="type">Type:</lable>
+        <input type="text" id="type" name="type" /><br><br>
+        <lable for="address">Address:</lable>
+        <input type="text" id="address" name="address" /><br><br>
+        <lable for="work">Work:</lable>
+        <input type="text" id="work" name="work" /><br><br>
+    </div>
+    <br><br>
+    <button id="insert" onclick="insert('employer');">INSERT</button>
+    <button id="select">SELECT</button>
+    <button id="update">UPDATE</button>
+    <button id="delete">DELETE</button>
+    <br><br>
+
+
+    <button id="showEntries" onclick="showRequests();">SHOW ENTRIES</button>
+    <div id="entries">
+    </div>
+
+    <button type="button" onclick="GoogleLogout();">Sing Out</button>
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+    <script src="./js/init-firebase.js"></script>
+
+    <script>
+        // console.log(user);
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                // User is signed in.
+                alert("SIGNED IN");
+                console.log(user.email);
+                document.getElementById('emailId').append(user.email);
+                sessionStorage.setItem("id", user.email);
+            } else {
+                // No user is signed in.
+            }
+        });
+    </script>
+
+    <script id="crud" src="./js/crud.js"></script>
+
+
+
+</body>
+
+</html>

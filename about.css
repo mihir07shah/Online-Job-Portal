@@ -1,0 +1,36 @@
+.bg{
+	width: 70%;
+	height: 250px;
+	margin-left: 180px;
+	background-image: url('aboutbg.jpg');
+}
+.c1{
+	margin-top: 50px;
+}
+.c1 p{
+	text-align: center;
+	font-family: corbel;
+	font-size: 30px;
+}
+.c2{
+	height: 100px;
+}
+.c2 p{
+	font-size: 40px;
+	font-family: corbel;
+	text-align: center;
+}
+.c3{
+	width: 55%;
+	margin-left: 300px;
+	height: 400px;
+	background-image: url('clemens.jpg');
+	background-size: contain;
+}
+.c6{
+	width: 40%;
+	margin-left: 400px;
+	height: 200px;
+	background-image: url('about18.jpg');
+	background-size: contain;
+}
